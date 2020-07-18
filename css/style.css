@@ -1,3 +1,104 @@
 body{
-    background-color: antiquewhite;
+    background:#f0f2f5
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.flex-container1{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    color: white;
+    background-color: black;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-container > div{
+    text-align: center;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+.grid-item6{
+    grid-column: 3;
+    grid-row: 2 /4;
+}
+nav   {
+    background-color:teal;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 576px) and (max-width: 768px){
+    nav{
+        background-color: black;
+    }
+}
+nav > a {
+color: white;
+margin-right: 10px;
+text-decoration: none;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.flex-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;    
+    height: 35px;
+    font-size: 20px;
+    color: white;
+    margin: 5px 0px;
+    padding: 5px 20px;
+    font-family:  sans-serif;
+    background-color: #173459;
+    text-align: center;
+}
+.flex-cantact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+form {
+    display: flex;
+    flex-direction:column ;
+}
+
+
+@media screen and (max-width: 850px) {
+    .flex-container1{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
 }
