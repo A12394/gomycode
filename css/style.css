@@ -22,8 +22,9 @@ body{
     color: white;
     background-color: black;
     grid-gap: 10px;
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
+    
 }
 
 .grid-container > div{
@@ -51,6 +52,12 @@ nav > a {
 color: white;
 margin-right: 10px;
 text-decoration: none;
+letter-spacing: 5px;
+}
+a:hover{
+    color: #000;
+    margin: 10px;
+    height: 10px;
 }
 img{
     width: 200px;
@@ -100,5 +107,8 @@ form {
         align-items: center;
         text-align: center;
     }
-    
+}
+footer{
+   bottom: 0;
+   text-align: center;
 }
